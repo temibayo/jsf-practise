@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head><title>Your Title Here</title>
+</h:head>
+<h:body>
+<h1>Submit your name and password</h1>
+<!-- Other HTML tags and non-input JSF elements here -->
+
+<h:form>
+first Name  <h:inputText value="#{myProcessor.firstName}"/>
+  <br />
+Last Name   <h:inputText value="#{myProcessor.lastName}"/>
+  
+  <h:commandButton value="Submit" action="#{myProcessor.processName}"/>
+</h:form>
+
+</h:body></html>
